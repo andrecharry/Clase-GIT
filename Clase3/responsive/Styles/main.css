@@ -1,0 +1,29 @@
+.menu{
+    display: none;
+}
+.logoHam{
+    width: 5px;
+}
+.nav{
+    background-color: aqua;
+    display: inline-block;
+    width: 80px;
+}
+.title{
+    display: inline;
+    margin-left: 5px;
+}
+@media all and (min-width: 780px){
+    .menu{
+        display: block;
+    }
+    .menu li{
+        display: inline;
+    }
+    .nav{
+        width: 50%;
+    }
+    .lohoHam{
+        display: none;
+    }
+}

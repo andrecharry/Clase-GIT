@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+}
+.slider{
+    width: 600px;
+    background-color: burlywood;
+    overflow: hidden;
+}
+.slider ul{
+    width: 300%;   
+}
+.slider__item{
+    display: inline;
+    list-style-type: none;
+}
+.slider__item_img{
+    width: 33%;
+    height: 400px;
+}
+section{
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+}
+.icon{
+    font-size: 50px;
+    color: plum;
+}
+h2{
+    font-size: 2rem;
+    font-family: 'Rubik', sans-serif;
+}

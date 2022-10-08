@@ -1,0 +1,115 @@
+.header{
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+.img-logo{
+    width: 50px;
+}
+ul{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.LiElement{
+    display: inline;
+    color: white;
+    padding: 15px;
+}
+.orange{
+    color:orange;
+}
+section{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 90px;
+}
+.article{
+    width: 40%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.laLiga{
+    background-image: url("https://www.orange.es/static/img/1300x768live-laliga-desktop.webp");
+}
+.tarifas{
+    background-image: url("https://www.orange.es/static/img/online-exclusive-img2.png");
+}
+.enlace{
+    background-color: orange;
+    color: black;
+    padding: 15px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+.encuentra-tarifas article{
+    height: 200px;
+    margin: 50px;
+    background-color: rosybrown;
+    position: relative;
+}
+.encuentra-tarifas div{
+    text-align: center;
+}
+.encuentra-tarifas a{
+    padding: 5px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.encuentra-tarifas a:hover{
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+.encuentra-tarifas a:focus{
+    background-color: orange;
+    color: white;
+    border: 1px solid black;
+}
+.search:focus{
+    background-color: orange;
+    color: white;
+    border: 1px solid black;
+}
+.header > form {
+    background-color: white;
+}
+/* el mas coge al primer hermano adyacente y la ondita coge a todos los hermanos */
+.img-logo + nav{
+    border: 5px solid blue;
+}
+.img-logo ~ nav{
+    border: 5px solid red;
+}
+/*puedo crear selectores para elementos que tengan mas de una clase, mas de un id o mas de un selector*/
+.article.tarifas{
+    color: orange;
+}
+.LiElement:first-child{
+    color:orange;
+}
+.LiElement:last-child{
+    color: red;
+}
+.LiElement:nth-child(3){
+    color: yellow;
+}
+::placeholder{
+    color: green;
+}
+::-ms-input-plaveholder{
+    color: green;
+}
+/*Pseudoelementos*/
+/*before -after*/

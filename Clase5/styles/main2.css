@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-image: url("../images/itachi1.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.header__nav{
+    align-self: center;
+    width: 30%;
+    background-color: yellow;
+    border-radius: 5px;
+}
+.container{
+    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+.container__main{
+    background-color: lightskyblue;
+    grid-column: span 9;
+    grid-row: span 4;
+}
+.container__aside{
+    background-color: blueviolet;
+    grid-column: 10/13;
+    grid-row: 1/5;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 50px;
+}
+.container__aside section{
+    margin-left: 5px;
+    width: 95%;
+    background-color: azure;
+}
+.container__aside :nth-child(1){
+    grid-row: span 1;
+}
+.container__aside :nth-child(2){
+    grid-row: span 2;
+}
+.container__main_ppal{
+    height: 80%;
+    background-color: lightgreen;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.container__main_ppal article{
+    height: 30%;
+    margin-top: 10px;
+    background-color: coral;
+}
+.footer{
+    background-color: pink;
+}
+
+@media all and (max-width:800px){
+    .container{
+        grid-template-rows: repeat(5, 1fr);
+    }
+    .container__main{
+        grid-column: span 12;
+        grid-row: 1/4;
+    }
+    .container__aside{
+        grid-column: span 12;
+        grid-row: 4/5;
+    }
+}
+
+
+
+@media all and (max-width:500px){
+    .container__aside{
+        display: none;
+    }
+    .container__main{
+        grid-column: span12;
+    }
+}

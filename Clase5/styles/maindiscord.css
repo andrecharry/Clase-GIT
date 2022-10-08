@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-image: url("../images/fondo.svg");
+    height: 40vh;
+}
+.wraper{
+    display: flex;
+    justify-content: space-between;
+}
+.header__logo{
+    width: 100px;
+    height: 60px;
+}
+.iconH{
+    font-size: 20px;
+    color: white;
+}
+.header__menu{
+    margin-right: 20px;
+    align-self: center;
+}
+.header__menu ul{
+    display: none;
+}
+.header h1, .header p{
+    color: white;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+form input{
+    width: 70%;
+}
+.imgCard{
+    display: none;
+}
+.article__wrapper{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.article__wrapper img{
+    width: 60px;
+    grid-column: 1/2;
+    grid-row: 1/4;
+}
+.main__menu{
+    display: none;
+}
+
+@media all and(min-width: 700px) {
+    .main__wrapper{
+        display: flex;
+        gap: 20px;
+    }
+    .main__menu{
+        width: 30%;
+        display: block;
+    }
+    .imgCard{
+        width: 150px;
+        display: block;
+        border-radius: 10px;
+    }
+    .main__caeds article{
+        display: flex;
+        gap: 10px;
+        align-items: flex-start;
+    }
+    .article__wrapper{
+        grid-gap: 5px;
+    }
+    .article__wrapper img{
+        width: 30px;
+        grid-row: 1/2;
+    }
+    .description{
+        grid-column: span 2;
+    }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="../images/Kittie.jpg" alt="" width="100px" />
+    <!-- comentario -->
+    <form action="" method="">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <!--number, date, radio, checkbox, email, tel,-->
+            <label for="name">nombre</label>
+            <input 
+                type="text" 
+                placeholder="indica nombre" 
+                name="nombrePersona" 
+                id="name"
+                minlength="3"
+                maxlenght="10"
+                required
+                patern=""
+            />
+
+            <input type="number" min="1" max="100"/>
+            <input type="date" /><br />
+
+            <input type="radio" name="playa" value="si"/> si 
+            <input type="radio" name="playa" value="no"/> no
+
+            <br />
+
+            <input type="checkbox" name="alergia" value="si"/> gluten 
+            <input type="checkbox" name="alergia" value="no"/> tomate
+
+            <input type="email" /><br />
+            <input type="password">
+            <input type="file">
+            <input type="text">
+        </fieldset>
+        <fieldset>
+            <legend>Datos envio</legend>
+
+            <select name="" id="">
+                <option value="">seleccioone</option>
+                <option value="es">España</option>
+                <option value="fr">Francia</option>
+            </select>
+
+            <textarea name="" id="" cols="50" rows="5"></textarea>
+            <input type="submit" value="enviar" />
+            <input type="reset" value="borrar" />
+            <button>Boton de enviar</button>
+        </fieldset>
+
+    </form>
+</body>
+</html>
